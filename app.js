@@ -114,13 +114,13 @@ map.set("blue", "1e90ff");
 map.set("green", "2e8b57");
 let green = map.get("green");
 
-// Modules with multiple exports (see separate file "module.js")
+// Modules with multiple exports (see separate file "myModule.js")
 import { extMultiply, extDivide } from './myModule.js';
 import * as extModule from './myModule.js';
 var dotwo4 = extMultiply(2, 2);
 var dotwo5 = extModule.extMultiply(2, 2);
 
-// Modules with single exports
+// Modules with single exports (see separate file "myModule2.js")
 import extModule2 from './myModule2.js';
 var module2 = extModule2(2);
 var dotwo6 = module2.multiply(2);
